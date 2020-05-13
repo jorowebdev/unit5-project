@@ -7,6 +7,7 @@ const galleryImages = document.querySelectorAll('.gallery--images')
 searchBar.addEventListener('keyup', () => {
   // Saves input
   const searchBarValue = searchBar.value.toLowerCase();
+  // Loops thru thumbnails
   for (let i = 0; i < galleryThumbs.length; i += 1) {
     const galleryCaption = galleryThumbs[i].getAttribute('data-title');
     // Looks to see if caption contains the string saved to searchBarValue
@@ -27,7 +28,6 @@ searchBar.addEventListener('keyup', () => {
       }
     }
   }
-
 });
 
 // lightbox options
