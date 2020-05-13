@@ -9,13 +9,22 @@ searchBar.addEventListener('keyup', () => {
 
   for (let i = 0; i < galleryThumbs.length; i += 1) {
     const galleryCaption = galleryThumbs[i].getAttribute('data-title');
-
-    if (galleryCaption.includes(searchBarValue)) {
+    // Looks to see if caption contains the string saved to searchBarValue
+    if (galleryCaption.toLowerCase().includes(searchBarValue)) {
+      // If true, the element thumbnail is displayed and the linked image is visible in the lightbox
       galleryThumbs[i].style.display = '';
       galleryThumbs[i].setAttribute('data-lightbox', 'gallery--images');
     } else {
-      galleryThumbs[i].style.display = 'none';
-      galleryThumbs[i].removeAttribute('data-lightbox');
+      // Else, look to see if the image alt attr contains the string saved to searchBarValue
+      if (galleryImages[i].getAttribute('alt').toLowerCase().includes(searchBarValue)) {
+        // If true, the element thumbnail is displayed and the linked image is visible in the lightbox
+        galleryThumbs[i].style.display = '';
+        galleryThumbs[i].setAttribute('data-lightbox', 'gallery--images');
+      } else {
+        // Else, hide the thumbnail and hide the image from displaying in the lightbox
+        galleryThumbs[i].style.display = 'none';
+        galleryThumbs[i].removeAttribute('data-lightbox');
+      }
     }
   }
 
