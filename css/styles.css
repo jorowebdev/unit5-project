@@ -373,6 +373,14 @@ a {
 .searchbar--input {
   min-height: 56px;
   padding: 16px 12px;
+  border: 1px solid #feeae6;
+}
+.searchbar--input:hover {
+  border: 1px solid #000;
+}
+.searchbar--input:focus {
+  border: 2px solid #442c2e;
+  outline: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
