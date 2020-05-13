@@ -1,0 +1,16 @@
+/* ============================================= */
+/*              Mixins                           */
+/* ============================================= */
+
+// Media Queries
+@mixin mq($break) {
+  @if $break == '320px' {
+    @media (max-width: $break) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $break) {
+      @content;
+    }
+  }
+}
