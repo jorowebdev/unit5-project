@@ -3,10 +3,10 @@ const searchBar = document.querySelector('.searchbar--input');
 const galleryThumbs = document.querySelectorAll('.gallery--thumbs');
 const galleryImages = document.querySelectorAll('.gallery--images')
 
+// Listens for text typed into the searchBar input
 searchBar.addEventListener('keyup', () => {
+  // Saves input
   const searchBarValue = searchBar.value.toLowerCase();
-  console.log(searchBarValue);
-
   for (let i = 0; i < galleryThumbs.length; i += 1) {
     const galleryCaption = galleryThumbs[i].getAttribute('data-title');
     // Looks to see if caption contains the string saved to searchBarValue
