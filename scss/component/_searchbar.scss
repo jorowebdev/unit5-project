@@ -1,0 +1,13 @@
+/* ============================================= */
+/*              Searchbar Styles                 */
+/* ============================================= */
+
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.searchbar--input {
+  flex-basis: 80%;
+}

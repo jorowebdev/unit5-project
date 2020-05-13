@@ -343,14 +343,17 @@ template {
   display: none;
 }
 
+/* ============================================= */
+/*              Searchbar Styles                 */
+/* ============================================= */
 .searchbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.searchbar {
-  background-color: black;
+.searchbar--input {
+  flex-basis: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
