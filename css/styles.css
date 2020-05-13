@@ -343,4 +343,10 @@ template {
   display: none;
 }
 
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
