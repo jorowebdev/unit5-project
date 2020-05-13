@@ -9,5 +9,10 @@
 }
 
 .searchbar--input {
-  flex-basis: 80%;
+  flex-basis: 280px;
+}
+
+.searchbar--input {
+  min-height: 56px;
+  padding: 16px 12px;  
 }
