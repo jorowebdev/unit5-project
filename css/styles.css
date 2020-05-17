@@ -363,6 +363,10 @@ a {
   color: #442c2e;
 }
 
+.lb-caption {
+  color: white;
+}
+
 /* ============================================= */
 /*              Container Styles                 */
 /* ============================================= */
@@ -434,6 +438,10 @@ a {
   .gallery--thumbs {
     flex: 1 0 25%;
   }
+}
+
+.lb-caption {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
