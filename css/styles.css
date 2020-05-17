@@ -377,7 +377,10 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 30px 0 10px;
+}
+
+.searchbar--input-container {
+  position: relative;
 }
 
 .searchbar--input {
@@ -386,7 +389,7 @@ a {
 
 .searchbar--input {
   min-height: 56px;
-  padding: 16px 12px;
+  padding: 16px 40px;
   background-color: #feeae6;
   border: 1px solid #feeae6;
 }
@@ -397,6 +400,18 @@ a {
   background: white;
   border: 1px solid #fedbd0;
   outline: none;
+}
+
+.searchbar--search-icon {
+  position: absolute;
+  top: 17px;
+  left: 9px;
+}
+
+.searchbar--cancel-icon {
+  position: absolute;
+  top: 16px;
+  right: 9px;
 }
 
 /* ============================================= */
