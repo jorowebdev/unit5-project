@@ -385,9 +385,6 @@ a {
 
 .searchbar--input {
   flex-basis: 280px;
-}
-
-.searchbar--input {
   min-height: 56px;
   padding: 16px 40px;
   background-color: #feeae6;
