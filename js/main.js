@@ -1,7 +1,32 @@
-
+const searchBarCancelIcon = document.querySelector('.searchbar--cancel-icon');
 const searchBar = document.querySelector('.searchbar--input');
 const galleryThumbs = document.querySelectorAll('.gallery--thumbs');
 const galleryImages = document.querySelectorAll('.gallery--images')
+
+// Listens for text typed into the searchBar input
+searchBar.addEventListener('keyup', () => {
+  // Checks if text has been typed in searchbar
+  if (searchBar.value) {
+    // If true, sets clear icon to visible
+    searchBarCancelIcon.style.visibility = "visible";
+  } else if (!searchBar.value) {
+    // If false, sets clear icon to hidden
+    searchBarCancelIcon.style.visibility = "hidden";
+  }
+});
+
+// Listens for click on icon
+searchBarCancelIcon.addEventListener('click', () => {
+  // Clears searchbar text
+  searchBar.value = ' ';
+  // Hides cancel icon
+  searchBarCancelIcon.style.visibility = 'hidden';
+  // Resets thumbnails and images to be visible
+  for (let i = 0; i < galleryThumbs.length; i += 1) {
+    galleryThumbs[i].style.display = '';
+    galleryThumbs[i].setAttribute('data-lightbox', 'gallery--landscape-set');
+  }
+})
 
 // Listens for text typed into the searchBar input
 searchBar.addEventListener('keyup', () => {

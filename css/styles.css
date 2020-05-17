@@ -412,6 +412,8 @@ a {
   position: absolute;
   top: 16px;
   right: 9px;
+  cursor: pointer;
+  visibility: hidden;
 }
 
 /* ============================================= */
