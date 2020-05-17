@@ -426,13 +426,6 @@ a {
   justify-content: center;
   padding: 10px 0;
 }
-@media (min-width: 768px) {
-  .gallery {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
 @media (min-width: 1024px) {
   .gallery {
     max-width: 1100px;
@@ -440,20 +433,20 @@ a {
   }
 }
 
-.gallery--thumbs {
+.gallery--thumbs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 22px;
 }
 @media (min-width: 768px) {
-  .gallery--thumbs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex: 1 0 33.3%;
+  .gallery--thumbs-container {
+    flex-basis: 33.3%;
   }
 }
 @media (min-width: 1024px) {
-  .gallery--thumbs {
-    flex: 1 0 25%;
+  .gallery--thumbs-container {
+    flex-basis: 25%;
   }
 }
 

@@ -8,26 +8,21 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px 0;
-  @include mq($break-m) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   @include mq($break-l) {
     max-width: 1100px;
     margin: 0 auto;
   }
 }
 
-.gallery--thumbs {
+.gallery--thumbs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 22px;
   @include mq($break-m) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex: 1 0 33.3%;
+    flex-basis: 33.3%;
   }
   @include mq($break-l) {
-    flex: 1 0 25%;
+    flex-basis: 25%;
   }
 }
