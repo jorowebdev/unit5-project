@@ -368,13 +368,40 @@ a {
 /* ============================================= */
 .gallery {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 10px 0;
 }
+@media (min-width: 768px) {
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
 
-.gallery--images {
-  padding: 22px 0;
+.gallery--thumbs {
+  padding: 22px;
+}
+@media (min-width: 768px) {
+  .gallery--thumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 0 33.3%;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery--thumbs {
+    flex: 1 0 25%;
+  }
 }
 
 /* ============================================= */
