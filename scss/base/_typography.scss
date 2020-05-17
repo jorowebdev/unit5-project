@@ -4,6 +4,7 @@
 
 * {
   font-family: 'Rubik', sans-serif;
+  color: #442c2e;
   box-sizing: border-box;
 }
 
@@ -14,3 +15,9 @@ a {
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
+
+.searchbar--input {
+  &::placeholder {
+    color: #442c2e;
+  }
+}
