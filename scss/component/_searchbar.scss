@@ -15,12 +15,14 @@
 .searchbar--input {
   min-height: 56px;
   padding: 16px 12px;
+  background-color: #feeae6;
   border: 1px solid #feeae6;
   &:hover {
-    border: 1px solid #000;
+    border: 1px solid #fedbd0;
   }
   &:focus {
-    border: 2px solid #442c2e;
+    background: white;
+    border: 1px solid #fedbd0;
     outline: none;
   }
 }
