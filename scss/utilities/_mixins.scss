@@ -3,7 +3,7 @@
 /* ============================================= */
 
 // Create flex container
-@mixin flexy-row (
+@mixin flexy(
   $disp: flex,
   $dir: row,
   $wrap: null,
