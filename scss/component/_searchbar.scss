@@ -17,14 +17,14 @@
   flex-basis: 280px;
   min-height: 56px;
   padding: 16px 40px;
-  background-color: #feeae6;
-  border: 1px solid #feeae6;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
   &:hover {
-    border: 1px solid #fedbd0;
+    border: 1px solid $color-accent;
   }
   &:focus {
-    background: white;
-    border: 1px solid #fedbd0;
+    background: $color-text-light;
+    border: 1px solid $color-accent;
     outline: none;
   }
 }

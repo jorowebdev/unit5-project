@@ -4,7 +4,7 @@
 
 * {
   font-family: 'Rubik', sans-serif;
-  color: #442c2e;
+  color: $color-text-dark;
   box-sizing: border-box;
 }
 
@@ -18,10 +18,10 @@ a {
 
 .searchbar--input {
   &::placeholder {
-    color: #442c2e;
+    color: $color-text-dark;
   }
 }
 
 .lb-caption {
-  color: white;
+  color: $color-text-light;
 }
