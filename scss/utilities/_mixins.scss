@@ -2,6 +2,18 @@
 /*              Mixins                           */
 /* ============================================= */
 
+// Create flex container
+@mixin flexy-row (
+  $disp: flex,
+  $dir: row,
+  $wrap: null,
+  $just: center) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
 // Media Queries
 @mixin mq($break) {
   @if $break == '320px' {
